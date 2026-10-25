@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68,<81", "wheel"]
+requires = ["setuptools>=77,<81", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -8,8 +8,8 @@ version = "0.3.0"
 description = "Shared configuration and lifecycle core for XDUCraft NoneBot plugins."
 readme = "README.md"
 requires-python = ">=3.9,<4"
-license = { file = "LICENSE" }
-classifiers = ["License :: OSI Approved :: MIT License"]
+license = "MIT"
+license-files = ["LICENSE"]
 dependencies = [
     "nonebot2~=2.4.3",
     "pydantic>=2,<3",
@@ -32,7 +32,6 @@ dev = [
 package-dir = { "" = "src" }
 packages = ["xducraft_bot.shared", "xducraft_config"]
 include-package-data = false
-license-files = ["LICENSE", "NOTICE*", "LICENSES/**/*", "THIRD_PARTY_LICENSES*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
